@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <div class="container-itens">
+            <img src="./QR Image.png" alt="QR code to frontendmentor.io" class="qr-code">
+            <div class="container-texto">
+                <h1>Improve your front-end skills by building projects</h1>
+                <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+}
+.container {
+    background-color: hsl(212, 45%, 89%); /* Slate 300 */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.container-itens {
+    width: 320px;
+    max-width: 90%;
+    background-color: hsl(0, 0%, 100%); /* White */
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.qr-code {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.container-texto {
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.container-texto h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: hsl(218, 44%, 22%); /* Slate 900 */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.container-texto p {
+    color: hsl(216, 15%, 48%); /* Slate 500 */
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 375px) {
+    .container-itens {
+        width: 290px;
+    }
+    
+    .container-texto h1 {
+        font-size: 1.3rem;
+    }
+}
+</style>
